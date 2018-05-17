@@ -6,7 +6,7 @@ var async = require('async');
 
 var app = express();
 var id = uuid.v4();
-var port = 3000;
+var port = 8080;
 
 app.get('/', function (req, res) {
   res.send(id)
@@ -16,7 +16,7 @@ app.get('/kboinfo/:gamedate/:team', function (req, res) {
   var date = req.params.gamedate;
   var team = req.params.team;
   //res.send(date+"|"+team);
-  kbogameinfo.getGame(date,'LG').then(function(endData){
+  kbogameinfo.getGame(date,team).then(function(endData){
     console.log(" ----------- ");
     console.log(endData);
     console.log(" ----------- ");
