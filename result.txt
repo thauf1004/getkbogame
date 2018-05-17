@@ -1,0 +1,10 @@
+{ G_DT_TXT: '2018년 5월 13일',
+  GAME_STATE_SC: '3',
+  G_TM: '14:00',
+  S_NM: '사직',
+  AWAY_NM: 'KT',
+  HOME_NM: '롯데',
+  CANCEL_SC_ID: '0',
+  CANCEL_SC_NM: '정상경기',
+  T_SCORE_CN: '1',
+  B_SCORE_CN: '3' }
