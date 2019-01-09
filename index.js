@@ -16,6 +16,7 @@ app.get('/kboinfo/:gamedate/:team', function (req, res) {
   var date = req.params.gamedate;
   var team = req.params.team;
   //res.send(date+"|"+team);
+  // var result = kbogameinfo.getGame(data,team);
   kbogameinfo.getGame(date,team).then(function(endData){
     console.log(" ----------- ");
     console.log(endData);
